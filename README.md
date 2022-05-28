@@ -1,2 +1,3 @@
 # 🐍 Python-exercices
-python exercices 
+
+Learning python programming language

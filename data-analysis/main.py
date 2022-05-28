@@ -15,7 +15,7 @@ for mes in lista_meses:
         print(f'No mês de {mes} alguém bateu a meta, Vendedor : {vendedor}, N° de vendas : {vendas}')
         # Nessa parte é necessário o login na plataforma twilio, para cadastrar um número de envio.
         message = client.messages.create(
-            to="telefone_que_recebe",
-            from_="telefone_de_envio",
+            to="",# telefone que recebe a mensagem
+            from_="",# telefone que envia a mensagem
             body=f'No mês de {mes} alguém bateu a meta, Vendedor :{vendedor}, N° de vendas : {vendas}')
         print(message.sid)
